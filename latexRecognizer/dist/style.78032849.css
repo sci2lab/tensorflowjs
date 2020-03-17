@@ -1,0 +1,31 @@
+
+body {
+  margin: auto;
+}
+
+#root {
+  margin: 20px;
+}
+
+.canvas-container {
+  border: 1px solid black;
+  box-sizing: unset;
+}
+
+#symbol {
+  width: 200px;
+  position: relative;
+  display: inline-table;
+}
+
+#probs {
+  position: relative;
+  display: inline-table
+}
+
+h3 {
+  text-align: center;
+}
+
+
+/*# sourceMappingURL=/style.78032849.css.map */

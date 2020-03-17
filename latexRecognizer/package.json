@@ -1,12 +1,35 @@
 {
+  "homepage": "https://sci2lab.github.io/tensorflowjs/latexRecognizer",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sci2lab/tensorflowjs"
+  },
   "name": "latexRecognizer",
   "version": "1.0.0",
-  "description": "",
+  "description": "A web application to recognize latex symbols, using tensflowjs",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "parcel index.html",
+    "predeploy": "rm -rf dist && parcel build index.html",
+    "deploy": "gh-pages -d dist"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "author": "Mehdi Allahyari",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/core": "^7.8.7",
+    "@babel/plugin-transform-runtime": "^7.8.3",
+    "@tensorflow/tfjs": "^1.7.0",
+    "@tensorflow/tfjs-node": "^1.7.0",
+    "babel-polyfill": "^6.26.0",
+    "canvas": "^2.6.1",
+    "cross-env": "^7.0.2",
+    "http-server": "^0.12.1",
+    "jquery": "^3.4.1",
+    "jsdom": "^16.2.1",
+    "popper.js": "^1.16.1"
+  },
+  "devDependencies": {
+    "gh-pages": "^2.2.0"
+  }
 }

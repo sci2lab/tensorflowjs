@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+
+  <!-- <script type="text/javascript"
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=TeX-MML-AM_CHTML">
+</script> -->
+  <!-- <script src="js/jquery.js"></script> -->
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {inlineMath: [["$","$"],["\\(","\\)"]]}
+    });
+  </script>
+
+
+    <script id="MathJax-script"  src="https://cdn.jsdelivr.net/npm/mathjax@3.0.0/es5/tex-mml-chtml.js"></script>
+
+  <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script> -->
+  <script src="js/fabric.js"></script>
+  <script src="js/custom.js"></script>
+
+  <title>Latex Recognizer Page</title>
+</head>
+<body>
+  <div id="root">
+    <h3>Recognizing Latex Symbols using ConvNets</h3>
+    <h4 id="load" class="load">Loading model...</h4>
+      <canvas id="canvas" width="150" height="150"></canvas>
+      <div>
+        <button type="button" class="btn btn-primary col-1 mt-3" id="clearBtn">Clear</button>
+      </div>
+
+      <p id="symbol"></p>
+      <div id="probs"></div>
+  </div>
+
+</body>
+</html>
